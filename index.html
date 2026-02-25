@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STREAMX — ดูหนังและอนิเมะ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo" id="nav-logo">STREAM<span>X</span></div>
+    <div class="nav-center">
+      <div class="nav-search" id="nav-search-wrap">
+        <input type="text" id="search-input" placeholder="ค้นหาหนัง / อนิเมะ..." autocomplete="off" />
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+    <div class="nav-right" id="nav-right">
+      <!-- injected by auth.js -->
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="app">
+    <!-- injected by app.js -->
+  </main>
+
+  <!-- MODAL LAYER -->
+  <div id="modal-layer"></div>
+
+  <!-- TOAST -->
+  <div id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="app-footer">
+    <p>© 2025 <span>STREAMX</span> — ดูหนังและอนิเมะคุณภาพสูง ✨ | ข้อมูลบันทึกบน Google Sheets</p>
+  </footer>
+
+  <!-- SCRIPTS (order matters) -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/premium.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
